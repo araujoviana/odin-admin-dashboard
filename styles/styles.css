@@ -1,10 +1,11 @@
+/* NEED to cleanup this later (˘･_･˘) */
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Temporary size */
 img {
     height: 2rem;
 }
@@ -229,7 +230,7 @@ img {
 
 /* The announcements tab looks surprisingly good without grid */
 
-.announcement-group {
+.announcement-group, .trending {
     background-color: white;
     border-radius: 20px;
     padding: 20px 30px;
@@ -241,5 +242,33 @@ img {
 
 .announcement-description {
     font-size: 13px;
+    color: grey;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.trending-projects {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.trending-image {
+    border-radius: 100%;
+    grid-column-start: 1;
+    grid-row-end: span 2;
+    height: 50%;
+}
+
+.trending-title {
+    margin-bottom: 0;
+}
+
+.trending-description {
+    margin-top: 0;
     color: grey;
 }
