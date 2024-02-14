@@ -8,3 +8,15 @@
     grid-template-columns: 1fr 4fr;
 }
 
+.dashboard {
+    grid-row-start: span 3;
+}
+
+.dashboard ul {
+    list-style-type: none;
+}
+
+.header {
+    grid-column-start: 2;
+    display: grid;
+}
