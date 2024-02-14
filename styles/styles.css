@@ -186,18 +186,23 @@ img {
     grid-template-areas:
         "title"
         "description";
-        background-color: white;
-        padding: 10px;
+    background-color: white;
+    padding: 10px;
+    padding-left: 20px;
     border-radius: 20px;
 }
 
 .project-title {
     grid-area: title;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 .project-description {
     grid-area: description;
+    margin-top: 5px;
+    color: grey;
+    font-size: 14px;
 }
 
 .project-buttons {
@@ -220,4 +225,21 @@ img {
 
 .content-title {
     font-weight: bold;
+}
+
+/* The announcements tab looks surprisingly good without grid */
+
+.announcement-group {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 30px;
+}
+
+.announcement-title {
+    font-weight: bold;
+}
+
+.announcement-description {
+    font-size: 13px;
+    color: grey;
 }
