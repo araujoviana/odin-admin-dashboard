@@ -1,10 +1,12 @@
 console.log('hi');
 
-// Placeholder images
-// const imgElements = document.querySelectorAll('img');
-// const placeholderImageUrl = 'https://picsum.photos/100/100';
-// imgElements.forEach(img => {
-//    img.src = placeholderImageUrl;
-// });
+// Places multiple images dinamically
+function placeImages(cssQuery, imgSource) {
+    const imgElements = document.querySelectorAll(cssQuery);
+    imgElements.forEach(imgElement => {
+        imgElement.src = imgSource;
+    });    
+}
 
-// TODO: Placing multiple images dinamically
+placeImages(".profile-picture", 'https://picsum.photos/100/100');
+
