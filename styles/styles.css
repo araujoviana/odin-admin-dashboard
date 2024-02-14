@@ -5,6 +5,7 @@ body {
 img {
     height: 2rem;
 }
+
 /* for visual guidance */
 .main-container > * {
     border: 1px solid black;
@@ -17,8 +18,20 @@ img {
 
 .dashboard {
     grid-row-start: span 3;
+    color: white;
+    background-color: #1992d4;
+    font-weight: bold;
 }
 
+.dashboard-logo {
+    font-size: large;
+}
+
+/* Selects all svgs from the dashboard and turns them white */
+/* This is probably the easiest way to do this */
+.dashboard img[src$=".svg"] {
+    filter: invert(1);
+}
 .dashboard ul {
     list-style-type: none;
 }
