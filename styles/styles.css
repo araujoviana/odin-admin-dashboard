@@ -167,4 +167,46 @@ img {
 
 .content {
     background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.your-projects-tab {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+/* It works!! */
+.project-item {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "title"
+        "description"
+        "buttons";
+}
+
+.project-title {
+    grid-area: title;
+}
+
+.project-description {
+    grid-area: description;
+}
+
+.trending-tab {
+    grid-column-start: 2;
+}
+
+.your-projects-tab .content-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+}
+
+.content-title {
+    font-weight: bold;
 }
