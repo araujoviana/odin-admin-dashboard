@@ -174,25 +174,36 @@ img {
 .your-projects-tab {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 16px;
+    padding: 40px 20px;
 }
+
 /* It works!! */
 .project-item {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "title"
-        "description"
-        "buttons";
+        "description";
+        background-color: white;
+        padding: 10px;
+    border-radius: 20px;
 }
 
 .project-title {
     grid-area: title;
+    font-weight: bold;
 }
 
 .project-description {
     grid-area: description;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    justify-self: end;
 }
 
 .trending-tab {
@@ -202,7 +213,7 @@ img {
 .your-projects-tab .content-title {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20px;
     width: 100%;
     z-index: 1; 
 }
